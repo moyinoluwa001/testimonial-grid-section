@@ -1,0 +1,98 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ 
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  display: grid;
+  grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 20px;
+  max-width: 1100px;
+}
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.purple { background-color: #733FC8; grid-area: daniel; }
+.gray { background-color: #49556B; grid-area: jonathan; }
+.white { background-color: #fff; color: #333; border: 2px solid #ddd; grid-area: jeanette; }
+.black { background-color: #19212D; grid-area: patrick; }
+.kira { background-color: #fff; color: #333; border: 2px solid #ddd; grid-area: kira; }
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+.author {
+  font-weight: bold;
+}
+.status {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+.quote {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+     
+  body {
+  height: auto;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+}
+
+
+@media (max-width: 480px) {
+body {
+  height: auto;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+}
+
+
